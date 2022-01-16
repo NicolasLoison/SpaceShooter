@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ship
+  - Life1
+  - Life2
+  - Life3
+  - Life4
+  - Life5
+  - Asteriod
+  - ScoreLabel
+  - Weapon
+  - Enemy
+  - EnemyWeapon
+  - Boss
+  - BossBarHp
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2216895821
+    locked: 0
+  - name: Gameplay
+    uniqueID: 2801254921
+    locked: 0
+  - name: Effects
+    uniqueID: 1023773395
+    locked: 0
+  - name: Canvas
+    uniqueID: 115822667
+    locked: 0
