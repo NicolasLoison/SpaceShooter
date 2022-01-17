@@ -21,6 +21,7 @@ public class PauseMenu : MonoBehaviour
     {
         SetActiveWeapons(false);
         pauseMenuUI.SetActive(true);
+        Debug.Log(Time.timeScale);
         Time.timeScale = 0;
         gameIsPaused = true;
     }
@@ -29,13 +30,15 @@ public class PauseMenu : MonoBehaviour
     {
         SetActiveWeapons(true);
         pauseMenuUI.SetActive(false);
-        Time.timeScale = 1;
+        Time.timeScale = GameManager.Instance.timeScale;
+        Debug.Log(Time.timeScale);
         gameIsPaused = false;
     }
     
     public void RetryButton()
     {
         Resume();
+        Time.timeScale = 1;
         GameManager.Instance.AddHighscore();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -43,6 +46,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMainMenu()
     {
         Resume();
+        Time.timeScale = 1;
         GameManager.Instance.AddHighscore();
         SceneManager.LoadScene("MainMenu");
     }

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int scorePlayer;
     private int _gameScenario;
     private int _nbLoop;
+    public float timeScale = 1;
     public Text[] scoreTexts;
     public static GameManager Instance;
     public AudioMixer audioMixer;
@@ -81,8 +82,9 @@ public class GameManager : MonoBehaviour
                         topTurret.SetActive(true); 
                         break;
                     default:
-                        Time.timeScale *= 1.15f;
-                        BossHealth.Instance.maxHp *= Time.timeScale;
+                        timeScale *= 1.15f;
+                        Time.timeScale = timeScale;
+                        BossHealth.Instance.maxHp *= timeScale;
                         break;
                 }
                 _nbLoop++;
